@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.NeiMapper">
+    <select id="queryForAll" resultType="nei">
+           select  * from neicun order by price
+      </select>
+
+    <select id="queryForName" parameterType="String" resultType="nei">
+        select * from neicun where name like  concat('%',#{name},'%')  order by price
+    </select>
+
+    <select id="queryForPrice1" resultType="nei">
+         select * from neicun where price &lt;150 order by price
+    </select>
+    <select id="queryForPrice2" resultType="nei">
+         select * from neicun where price &gt;=150 and price &lt;300 order by price
+    </select>
+    <select id="queryForPrice3" resultType="nei">
+         select * from neicun where price &gt;=300 and price &lt;500 order by price
+    </select>
+    <select id="queryForPrice4" resultType="nei">
+         select * from neicun where price &gt;=500 order by price
+    </select>
+
+    <select id="queryForLei" resultType="nei" parameterType="String">
+           select * from neicun where lei =#{lei}  order by price
+    </select>
+
+    <select id="queryForTao" resultType="nei" parameterType="String">
+         select * from neicun where tao like  concat('%',#{tao},'%')  order by price
+    </select>
+
+    <select id="queryForZhu1" resultType="nei">
+        select * from neicun where zhu &gt;=4000  order by price
+    </select>
+    <select id="queryForZhu2" resultType="nei" parameterType="String">
+        select * from neicun where zhu =#{zhu}   order by price
+    </select>
+    <select id="queryForZhu3" resultType="nei">
+        select * from neicun where zhu &lt;=2400   order by price
+    </select>
+</mapper>

@@ -24,14 +24,15 @@ public class CpuController {
 
     @RequestMapping("/getCpuAll")
     public String getCpu (@RequestParam(value="pn",defaultValue = "1") Integer pn ,HttpServletRequest request){
-        Map<String ,Object> map=new HashMap<String, Object>();
         PageHelper.startPage(pn,3);
         List<Cpu> cpus = cpuService.queryForCpu();
         PageInfo page=new PageInfo(cpus,4);
 
         HttpSession session = request.getSession();
-        session.setAttribute("pageInfo",page);
-        session.setAttribute("url","getCpuAll");
+        request.setAttribute("pageInfo",page);
+        request.setAttribute("url","getCpuAll");
+       /* session.setAttribute("pageInfo",page);*/
+        /*session.setAttribute("url","getCpuAll");*/
         return "/list/cpuList.jsp";
     }
 

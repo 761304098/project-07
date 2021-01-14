@@ -17,5 +17,6 @@
         <mapper class="com.sun.dao.UserMapper"/>
         <mapper class="com.sun.dao.CpuMapper"/>
         <mapper class="com.sun.dao.zhubanMapper"/>
+        <mapper class="com.sun.dao.NeiMapper"/>
     </mappers>
 </configuration>

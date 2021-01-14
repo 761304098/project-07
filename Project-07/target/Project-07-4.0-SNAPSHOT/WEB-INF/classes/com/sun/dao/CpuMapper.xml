@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.CpuMapper">
+    <select id="queryForCpu" resultType="cpu" >
+        select * from cpu
+    </select>
+    <select id="queryForBrand" resultType="cpu" parameterType="string">
+        select * from cpu  where brand=#{brand}
+    </select>
+    <select id="queryForPrice1" resultType="cpu" >
+        select * from cpu  where price&lt;500
+    </select>
+    <select id="queryForPrice2" resultType="cpu" >
+        select * from cpu  where price&gt;=500 and price&lt;1500
+    </select>
+    <select id="queryForPrice3" resultType="cpu" >
+        select * from cpu  where price&gt;=1500
+    </select>
+
+    <select id="queryForSeries" resultType="cpu" parameterType="string">
+        select * from cpu  where cpuseries like  concat('%',#{series},'%')
+    </select>
+    <select id="queryForSlot" resultType="cpu" parameterType="string">
+        select * from cpu  where slot like  concat('%',#{slot},'%')
+    </select>
+    <select id="queryForCore" resultType="cpu" parameterType="string">
+        select * from cpu  where  corenumber =#{core}
+    </select>
+</mapper>
