@@ -136,7 +136,7 @@
                     <a href="javascript:;" id="a14">LGA2066</a>
                     <a href="javascript:;" id="a15">LGA1155</a>
                     <a href="javascript:;" id="a16">LGA1151</a>
-                    <a href="javascript:;" id="a17">LGA1150</a>
+                    <a href="javascript:;" id="a17">LGA1150</a>)
                     <a href="javascript:;" id="a18">AMD</a>
                     (<a href="javascript:;" style="margin-left: 0%" id="a19">SocketTR4</a>
                     <a href="javascript:;" id="a20">SocketsTRX4</a>

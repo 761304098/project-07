@@ -8,4 +8,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Ying {
+     private int id;
+     private String name;
+     private int price;
+     private int rong;
+     private int zhuan;
+     private String chi;
+     private String jie;
+     private String huan;
 }

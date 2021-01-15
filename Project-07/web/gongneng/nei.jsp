@@ -135,13 +135,6 @@
             $("#a39").click(function (){
                 $("#neiList").attr("src","${pageContext.request.contextPath}/getName10")
             })
-
-
-
-
-
-
-
         })
     </script>
 </head>

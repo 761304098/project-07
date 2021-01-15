@@ -27,7 +27,9 @@
             $("#listGroup li:eq(2)").click(function (){
                 $("#cuanji").attr("src",'nei.jsp')
             })
-
+            $("#listGroup li:eq(3)").click(function (){
+                $("#cuanji").attr("src",'ying.jsp')
+            })
           $("#listGroup li").click(function (){
              let span_now=$(this).children("div").children("div:last").children().text();
               //记录第几次点击
@@ -108,8 +110,8 @@
                              <span  class="hidden">0</span>
                              <div class="row">
                                  <div class="col-sm-2"><strong>硬盘</strong></div>
-                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name4">请选择商品</span></div>
+                                 <div class="col-sm-2   text-info"><a href="ying.jsp" style="text-decoration: none" id="price4">添加</a></div>
                              </div>
 
                          </li>

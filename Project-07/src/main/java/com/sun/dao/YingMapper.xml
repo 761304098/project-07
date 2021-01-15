@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.YingMapper">
+        <select id="queryForAll" resultType="ying">
+              select * from ying order by price
+        </select>
+
+        <select id="queryForName" parameterType="String" resultType="ying">
+            select * from ying where name like concat ('%',#{name},'%') order by price
+        </select>
+
+       <select id="queryForPrice1" resultType="ying">
+           select * from ying where price &lt; 400 order by price
+       </select>
+       <select id="queryForPrice2" resultType="ying">
+           select * from ying where price &gt;= 400 and price &lt;600 order by price
+       </select>
+       <select id="queryForPrice3" resultType="ying">
+           select * from ying where price &gt;= 600 and price &lt;1000 order by price
+       </select>
+       <select id="queryForPrice4" resultType="ying">
+           select * from ying where price &gt;= 1000 order by price
+       </select>
+       <select id="queryForRong1" resultType="ying">
+            select * from ying where rong &gt;=10000 order by price
+       </select>
+        <select id="queryForRong2" resultType="ying" parameterType="int">
+               select * from ying where rong =#{rong} order by price
+        </select>
+
+
+     <select id="queryForRong3" resultType="ying">
+            select * from ying where rong &lt;=1000 order by price
+        </select>
+     <select id="queryForHuan" parameterType="String" resultType="ying">
+          select  * from ying where huan =#{huan} order by price
+     </select>
+
+      <select id="queryForZhuan" resultType="ying" parameterType="int">
+            select * from ying where zhuan =#{zhuan} order by price
+      </select>
+
+      <select id="queryForJie" resultType="ying" parameterType="String">
+          select * from ying where  jie =#{jie} order by price
+      </select>
+</mapper>
