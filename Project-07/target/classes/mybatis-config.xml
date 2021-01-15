@@ -19,5 +19,6 @@
         <mapper class="com.sun.dao.zhubanMapper"/>
         <mapper class="com.sun.dao.NeiMapper"/>
         <mapper class="com.sun.dao.YingMapper"/>
+        <mapper class="com.sun.dao.GuMapper"/>
     </mappers>
 </configuration>

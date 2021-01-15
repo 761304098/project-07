@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.GuMapper">
+       <select id="queryForAll" resultType="gu">
+             select * from gutai order by price
+       </select>
+       <select id="queryForName" resultType="gu" parameterType="String">
+             select * from gutai where name like  concat('%',#{name},'%')  order by price
+       </select>
+      <select id="queryForPrice1" resultType="gu">
+           select * from gutai where price &lt;300 order by price
+      </select>
+
+      <select id="queryForPrice2" resultType="gu" parameterType="map">
+           select * from gutai where price &gt;=#{price1} and price &lt;#{price2} order by price
+      </select>
+
+      <select id="queryForPrice3" resultType="gu">
+           select * from gutai where price &gt;=5000 order by price
+      </select>
+
+    <select id="queryForRong1" resultType="gu">
+           select * from gutai where rong &gt;2000 order by price
+      </select>
+
+    <select id="queryForRong2" resultType="gu" parameterType="map">
+           select * from gutai where rong &gt;=#{rong1} and rong &lt;=#{rong2} order by price
+      </select>
+
+    <select id="queryForRong3" resultType="gu">
+           select * from gutai where rong &lt;100 order by price
+      </select>
+
+     <select id="queryForLei" parameterType="String" resultType="gu">
+           select * from gutai where lei like concat('%',#{lei},'%')  order by price
+     </select>
+</mapper>

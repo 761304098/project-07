@@ -30,6 +30,9 @@
             $("#listGroup li:eq(3)").click(function (){
                 $("#cuanji").attr("src",'ying.jsp')
             })
+            $("#listGroup li:eq(4)").click(function (){
+                $("#cuanji").attr("src",'gutai.jsp')
+            })
           $("#listGroup li").click(function (){
              let span_now=$(this).children("div").children("div:last").children().text();
               //记录第几次点击
@@ -119,8 +122,8 @@
                              <span  class="hidden">0</span>
                              <div class="row">
                                  <div class="col-sm-2"><strong>固态硬盘</strong></div>
-                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name5">请选择商品</span></div>
+                                 <div class="col-sm-2   text-info"><a href="gutai.jsp" style="text-decoration: none" id="price5">添加</a></div>
                              </div>
 
                          </li>
