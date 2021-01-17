@@ -1,3 +1,4 @@
+/*
 import com.sun.bean.Cpu;
 import com.sun.bean.Nei;
 import com.sun.service.CpuServiceImpl;
@@ -19,3 +20,4 @@ public class NeiTest {
         }
     }
 }
+*/

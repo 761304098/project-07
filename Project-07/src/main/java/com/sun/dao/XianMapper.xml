@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.XianMapper">
+        <select id="queryForAll" resultType="xian" >
+            select * from xianka order by price
+        </select>
+
+         <select id="queryForName" parameterType="String" resultType="xian">
+            select * from xianka where name like concat ('%',#{name},'%') order by price
+        </select>
+
+    <select id="queryForPrice1" resultType="xian">
+           select * from xianka where price &lt;500 order by price
+      </select>
+
+    <select id="queryForPrice2" resultType="xian" parameterType="map">
+           select * from xianka where price &gt;=#{price1} and price &lt;#{price2} order by price
+      </select>
+
+    <select id="queryForPrice3" resultType="xian">
+           select * from xianka where price &gt;=10000 order by price
+      </select>
+     <select id="queryForRong" resultType="xian" parameterType="String">
+          select * from xianka where rong like concat ('%',#{rong},'%') order by price
+     </select>
+      <select id="queryForJie" resultType="xian" parameterType="String">
+            select * from xianka where jie like concat ('%',#{Jie},'%') order by price
+      </select>
+</mapper>

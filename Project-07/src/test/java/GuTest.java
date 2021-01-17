@@ -1,3 +1,4 @@
+/*
 import com.sun.bean.Gu;
 import com.sun.bean.Nei;
 import com.sun.service.GuServiceImpl;
@@ -24,3 +25,4 @@ public class GuTest {
         }
     }
 }
+*/
