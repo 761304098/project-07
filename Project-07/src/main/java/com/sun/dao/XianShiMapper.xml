@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.XianShiMapper">
+      <select id="queryForAll" resultType="xianShi">
+             select * from xianshiqi order by price
+      </select>
+
+      <select id="queryForName" parameterType="String" resultType="xianShi">
+           select * from xianshiqi where name like concat ('%',#{name},'%') order by price
+      </select>
+
+    <select id="queryForPrice1" resultType="xianShi">
+           select * from xianshiqi where price &lt;= 499 order by price
+       </select>
+    <select id="queryForPrice2" resultType="xianShi">
+           select * from xianshiqi where price &gt;= 500 and price &lt;=799 order by price
+       </select>
+    <select id="queryForPrice3" resultType="xianShi">
+           select * from xianshiqi where price &gt;= 800 and price &lt;=999 order by price
+       </select>
+    <select id="queryForPrice4" resultType="xianShi">
+           select * from xianshiqi where price &gt;= 1000 order by price
+       </select>
+    
+      <select id="queryForChi1" resultType="xianShi">
+          select * from xianshiqi where  chi &gt;30 order by price
+      </select>
+    <select id="queryForChi2" resultType="xianShi">
+          select * from xianshiqi where  chi &lt;=30 and chi &gt;=27 order by price
+      </select>
+    <select id="queryForChi3" resultType="xianShi">
+          select * from xianshiqi where  chi &lt;=26 and chi &gt;=23 order by price
+      </select>
+    <select id="queryForChi4" resultType="xianShi">
+         select * from xianshiqi where  chi &lt;=22 and chi &gt;=20 order by price
+      </select>
+    <select id="queryForChi5" resultType="xianShi">
+          select * from xianshiqi where  chi &lt;20
+      </select>
+     <select id="queryForLei" resultType="xianShi" parameterType="String">
+          select * from xianshiqi where lei  like concat ('%',#{lei},'%') order by price
+      </select>
+
+     <select id="queryForMian" parameterType="String" resultType="xianShi">
+           select * from xianshiqi where mian like concat ('%',#{mian},'%') order by price
+     </select>
+
+</mapper>

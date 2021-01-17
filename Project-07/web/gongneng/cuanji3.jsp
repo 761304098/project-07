@@ -36,7 +36,12 @@
             $("#listGroup li:eq(5)").click(function (){
                 $("#cuanji").attr("src",'xian.jsp')
             })
-          $("#listGroup li").click(function (){
+            $("#listGroup li:eq(6)").click(function (){
+                $("#cuanji").attr("src",'xianShi.jsp')
+            })
+
+
+            $("#listGroup li").click(function (){
              let span_now=$(this).children("div").children("div:last").children().text();
               //记录第几次点击
               let li_span =$(this).children("span").text();
@@ -117,7 +122,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>硬盘</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name4">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="ying.jsp" style="text-decoration: none" id="price4">添加</a></div>
+                                 <div class="col-sm-2   text-info"><a href="ying.jsp" target="cuanji" style="text-decoration: none" id="price4">添加</a></div>
                              </div>
 
                          </li>
@@ -126,7 +131,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>固态硬盘</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name5">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="gutai.jsp" style="text-decoration: none" id="price5">添加</a></div>
+                                 <div class="col-sm-2   text-info"><a href="gutai.jsp" target="cuanji" style="text-decoration: none" id="price5">添加</a></div>
                              </div>
 
                          </li>
@@ -135,7 +140,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>显卡</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name6">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="xian.jsp" style="text-decoration: none" id="price6">添加</a></div>
+                                 <div class="col-sm-2  text-info"><a href="xian.jsp"  target="cuanji" style="text-decoration: none" id="price6">添加</a></div>
                              </div>
 
                          </li>
@@ -143,8 +148,8 @@
                              <span  class="hidden">0</span>
                              <div class="row">
                                  <div class="col-sm-2"><strong>显示器</strong></div>
-                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name7">请选择商品</span></div>
+                                 <div class="col-sm-2   text-info"><a href="xianShi.jsp" target="cuanji" style="text-decoration: none" id="price7">添加</a></div>
                              </div>
 
                          </li>
@@ -153,7 +158,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>机箱</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2 text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2 text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -162,7 +167,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>电源</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2  text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -171,7 +176,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>散热器</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2   text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -180,7 +185,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>鼠标</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2  text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -189,7 +194,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>键盘</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2 text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2 text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -198,7 +203,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>音箱</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2   text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -207,7 +212,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>光驱</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2   text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2   text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -216,7 +221,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>声卡</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2  text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
@@ -226,7 +231,7 @@
                              <div class="row">
                                  <div class="col-sm-2"><strong>网卡</strong></div>
                                  <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="#" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-2  text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
                              </div>
 
                          </li>
