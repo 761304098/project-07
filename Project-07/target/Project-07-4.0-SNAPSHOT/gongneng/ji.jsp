@@ -66,7 +66,7 @@
                 $("#jiList").attr("src","${pageContext.request.contextPath}/getJiLei3")
             })
 
-          
+
         })
     </script>
 </head>

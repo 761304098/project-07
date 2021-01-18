@@ -42,6 +42,9 @@
             $("#listGroup li:eq(7)").click(function (){
                 $("#cuanji").attr("src",'ji.jsp')
             })
+            $("#listGroup li:eq(8)").click(function (){
+                $("#cuanji").attr("src",'dian.jsp')
+            })
 
 
 
@@ -170,8 +173,8 @@
                              <span  class="hidden">0</span>
                              <div class="row">
                                  <div class="col-sm-2"><strong>电源</strong></div>
-                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name9">请选择商品</span></div>
+                                 <div class="col-sm-2  text-info"><a href="dian.jsp" target="cuanji" style="text-decoration: none" id="price9">添加</a></div>
                              </div>
 
                          </li>

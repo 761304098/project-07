@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Sun
-  Date: 2021/1/15
-  Time: 17:20
+  Date: 2021/1/18
+  Time: 18:08
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -23,7 +23,7 @@
                 let name= $(this).parent().parent().parent().children("div :first").children("strong").children("span").text();
                 let price =$(this).parent().parent().children("strong:first").children("span").text();
                 let pricecopy  =parseInt(price);
-                let namecopy=window.parent.parent.$("#name5").text(); //更改名称前 保存原名称
+                let namecopy=window.parent.parent.$("#name9").text(); //更改名称前 保存原名称
                 let span1  = window.parent.parent.$("#span1").text();
                 let span11  =parseInt(span1);
                 if( namecopy =='请选择商品'){ // 初次数值
@@ -31,9 +31,9 @@
                     window.parent.parent.$("#span1").text(span11);
                 }
 
-                window.parent.parent.$("#name5").text(name);
-                window.parent.parent.$("#price5").css("color","red");
-                window.parent.parent.$("#price5").text("￥"+price);
+                window.parent.parent.$("#name9").text(name);
+                window.parent.parent.$("#price9").css("color","red");
+                window.parent.parent.$("#price9").text("￥"+price);
 
 
 
@@ -59,22 +59,22 @@
                             <strong><span id="name">${p.name}</span></strong>
 
                             <div style="color: #8c8c8c; padding-left: 10%;margin-top: 2%">
-                                存储容量： <span style="color: black;">${p.rong}GB</span>
+                                额定功率： <span style="color: black;">${p.gong}W</span>
                             </div>
                             <div style="color: #8c8c8c; padding-left: 10%;margin-top: 1%">
-                                读取速度： <span style="color: black;">${p.su}</span>
+                                 <span style="color: black;">${p.three}</span>
                             </div>
                             <div style="color: #8c8c8c; padding-left: 10%;margin-top: 1%;margin-bottom: 2.5%">
-                                架构/质保： <span style="color: black;">${p.jia}</span>
+                                 <span style="color: black;">${p.five}</span>
                             </div>
                         </div>
                         <div class="col-xs-6 text-right"  style="color: red">
                             <strong>￥<span>${p.price}</span></strong>
                             <div style="color: #8c8c8c;margin-top: 2%" class="text-left">
-                                接口类型： <span style="color: black;">${p.lei}</span>
+                                 <span style="color: black;">${p.two}</span>
                             </div>
                             <div style="color: #8c8c8c; margin-top: 1%" class="text-left">
-                                尺寸： <span style="color: black;">${p.chi}</span>
+                                <span style="color: black;">${p.four}</span>
                             </div>
                             <div style="color: #8c8c8c; " class="text-right">
                                 <button class="btn btn-primary" id="bt1" name="bt1"><span class="glyphicon glyphicon-plus"></span>加入配置单</button>
@@ -146,4 +146,3 @@
 </div>
 </body>
 </html>
-

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.DianMapper">
+     <select id="queryForAll" resultType="dian">
+           select * from dianyuan order by price
+     </select>
+    <select id="queryForName" resultType="dian" parameterType="String">
+           select * from dianyuan where name like  concat('%',#{name},'%')  order by price
+    </select>
+    <select id="queryForPrice1" resultType="dian">
+           select * from dianyuan where price &lt;150 order by price
+      </select>
+
+    <select id="queryForPrice2" resultType="dian" parameterType="map">
+           select * from dianyuan where price &gt;=#{price1} and price &lt;#{price2} order by price
+      </select>
+
+    <select id="queryForPrice3" resultType="dian">
+           select * from dianyuan where price &gt;=1000 order by price
+      </select>
+
+    <select id="queryForGong1" resultType="dian">
+           select * from dianyuan where gong &lt;=300 order by price
+      </select>
+
+    <select id="queryForGong2" resultType="dian" parameterType="map">
+           select * from dianyuan where gong &gt;=#{gong1} and gong &lt;=#{gong2} order by price
+      </select>
+
+    <select id="queryForGong3" resultType="dian">
+           select * from dianyuan where gong &gt;=801 order by price
+      </select>
+
+    <select id="queryForThree" resultType="dian" parameterType="String">
+           select * from dianyuan where three like  concat('%',#{three},'%')  order by price
+    </select>
+</mapper>
