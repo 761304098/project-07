@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Sun
-  Date: 2021/1/14
-  Time: 11:26
+  Date: 2021/1/18
+  Time: 15:39
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -23,7 +23,7 @@
                 let name= $(this).parent().parent().parent().children("div :first").children("strong").children("span").text();
                 let price =$(this).parent().parent().children("strong:first").children("span").text();
                 let pricecopy  =parseInt(price);
-                let namecopy=window.parent.parent.$("#name3").text(); //更改名称前 保存原名称
+                let namecopy=window.parent.parent.$("#name8").text(); //更改名称前 保存原名称
                 let span1  = window.parent.parent.$("#span1").text();
                 let span11  =parseInt(span1);
                 if( namecopy =='请选择商品'){ // 初次数值
@@ -31,9 +31,9 @@
                     window.parent.parent.$("#span1").text(span11);
                 }
 
-                window.parent.parent.$("#name3").text(name);
-                window.parent.parent.$("#price3").css("color","red");
-                window.parent.parent.$("#price3").text("￥"+price);
+                window.parent.parent.$("#name8").text(name);
+                window.parent.parent.$("#price8").css("color","red");
+                window.parent.parent.$("#price8").text("￥"+price);
 
 
 
@@ -59,22 +59,22 @@
                             <strong><span id="name">${p.name}</span></strong>
 
                             <div style="color: #8c8c8c; padding-left: 10%;margin-top: 2%">
-                                内存容量： <span style="color: black;">${p.rong}</span>
+                                机箱类型： <span style="color: black;">${p.lei}</span>
                             </div>
                             <div style="color: #8c8c8c; padding-left: 10%;margin-top: 1%">
-                                内存类型： <span style="color: black;">${p.lei}</span>
+                                <span style="color: black;">${p.three}</span>
                             </div>
                             <div style="color: #8c8c8c; padding-left: 10%;margin-top: 1%;margin-bottom: 2.5%">
-                                工作电压： <span style="color: black;">${p.dian}</span>
+                                <span style="color: black;">${p.five}</span>
                             </div>
                         </div>
                         <div class="col-xs-6 text-right"  style="color: red">
                             <strong>￥<span>${p.price}</span></strong>
                             <div style="color: #8c8c8c;margin-top: 2%" class="text-left">
-                                容量描述： <span style="color: black;">${p.tao}</span>
+                                机箱结构： <span style="color: black;">${p.jiegou}</span>
                             </div>
                             <div style="color: #8c8c8c; margin-top: 1%" class="text-left">
-                                内存主频： <span style="color: black;">${p.zhu}MHz</span>
+                                 <span style="color: black;">${p.four}</span>
                             </div>
                             <div style="color: #8c8c8c; " class="text-right">
                                 <button class="btn btn-primary" id="bt1" name="bt1"><span class="glyphicon glyphicon-plus"></span>加入配置单</button>

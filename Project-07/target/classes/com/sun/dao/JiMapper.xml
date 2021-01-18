@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.JiMapper">
+      <select id="queryForAll" resultType="jiXiang">
+          select * from jixiang order by price
+      </select>
+     <select id="queryForName" resultType="jiXiang" parameterType="String">
+           select * from jixiang where name like  concat('%',#{name},'%')  order by price
+     </select>
+
+    <select id="queryForPrice1" resultType="jiXiang">
+           select * from jixiang where price &lt;150 order by price
+      </select>
+
+    <select id="queryForPrice2" resultType="jiXiang" parameterType="map">
+           select * from jixiang where price &gt;=#{price1} and price &lt;#{price2} order by price
+      </select>
+
+    <select id="queryForPrice3" resultType="jiXiang">
+           select * from jixiang where price &gt;=300 order by price
+      </select>
+    <select id="queryForLei" resultType="jiXiang" parameterType="String">
+           select * from jixiang where lei like  concat('%',#{lei},'%')  order by price
+      </select>
+</mapper>

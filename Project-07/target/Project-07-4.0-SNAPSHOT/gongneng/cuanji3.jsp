@@ -39,6 +39,10 @@
             $("#listGroup li:eq(6)").click(function (){
                 $("#cuanji").attr("src",'xianShi.jsp')
             })
+            $("#listGroup li:eq(7)").click(function (){
+                $("#cuanji").attr("src",'ji.jsp')
+            })
+
 
 
             $("#listGroup li").click(function (){
@@ -157,8 +161,8 @@
                              <span  class="hidden">0</span>
                              <div class="row">
                                  <div class="col-sm-2"><strong>机箱</strong></div>
-                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2 text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name8">请选择商品</span></div>
+                                 <div class="col-sm-2 text-info"><a href="ji.jsp" target="cuanji" style="text-decoration: none" id="price8">添加</a></div>
                              </div>
 
                          </li>
