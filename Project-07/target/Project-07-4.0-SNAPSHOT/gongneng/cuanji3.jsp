@@ -48,6 +48,10 @@
             $("#listGroup li:eq(9)").click(function (){
                 $("#cuanji").attr("src",'san.jsp')
             })
+            $("#listGroup li:eq(10)").click(function (){
+                $("#cuanji").attr("src",'shu.jsp')
+            })
+
 
 
 
@@ -195,8 +199,8 @@
                              <span  class="hidden">0</span>
                              <div class="row">
                                  <div class="col-sm-2"><strong>鼠标</strong></div>
-                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d">请选择商品</span></div>
-                                 <div class="col-sm-2  text-info"><a href="#" target="cuanji" style="text-decoration: none">添加</a></div>
+                                 <div class="col-sm-6 col-sm-offset-1 "><span style="color: #9d9d9d" id="name11">请选择商品</span></div>
+                                 <div class="col-sm-2  text-info"><a href="shu.jsp" target="cuanji" style="text-decoration: none" id="price11">添加</a></div>
                              </div>
 
                          </li>

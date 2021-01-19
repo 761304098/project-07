@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.ShuMapper">
+      <select id="queryForAll" resultType="shu">
+           select * from shubiao order by price
+      </select>
+       <select id="queryForName" resultType="shu" parameterType="String">
+             select * from shubiao where name like concat('%',#{name},'%')  order by price
+       </select>
+    <select id="queryForPrice1" resultType="shu">
+         select * from shubiao where price &lt;=39 order by price
+    </select>
+    <select id="queryForPrice2" resultType="shu">
+         select * from shubiao where price &gt;=40 and price &lt;=99 order by price
+    </select>
+    <select id="queryForPrice3" resultType="shu">
+         select * from shubiao where price &gt;=100 and price &lt;=399 order by price
+    </select>
+    <select id="queryForPrice4" resultType="shu">
+         select * from shubiao where price &gt;=400 order by price
+    </select>
+
+    <select id="queryForOne" resultType="shu" parameterType="String">
+         select * from shubiao where one like concat('%',#{one},'%')  order by price
+    </select>
+    <select id="queryForTwo" resultType="shu" parameterType="String">
+         select * from shubiao where two like concat('%',#{two},'%')  order by price
+    </select>
+
+
+</mapper>
