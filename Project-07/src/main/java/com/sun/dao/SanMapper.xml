@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.SanMapper">
+        <select id="queryForAll" resultType="san">
+             select * from sanre order by price
+        </select>
+
+       <select id="queryForName" resultType="san" parameterType="String">
+             select * from sanre where name like concat('%',#{name},'%')  order by price
+       </select>
+
+    <select id="queryForPrice1" resultType="san">
+         select * from sanre where price &lt;30 order by price
+    </select>
+    <select id="queryForPrice2" resultType="san">
+         select * from sanre where price &gt;=30 and price &lt;100 order by price
+    </select>
+    <select id="queryForPrice3" resultType="san">
+         select * from sanre where price &gt;=100 and price &lt;400 order by price
+    </select>
+    <select id="queryForPrice4" resultType="san">
+         select * from sanre where price &gt;=400 order by price
+    </select>
+
+    <select id="queryForOne" resultType="san" parameterType="String">
+             select * from sanre where one like concat('%',#{one},'%')  order by price
+       </select>
+
+    <select id="queryForTwo" resultType="san" parameterType="String">
+             select * from sanre where two like concat('%',#{two},'%')  order by price
+       </select>
+
+</mapper>

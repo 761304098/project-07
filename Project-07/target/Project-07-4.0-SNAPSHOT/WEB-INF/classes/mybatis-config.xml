@@ -23,5 +23,6 @@
         <mapper class="com.sun.dao.XianShiMapper"/>
         <mapper class="com.sun.dao.JiMapper"/>
         <mapper class="com.sun.dao.DianMapper"/>
+        <mapper class="com.sun.dao.SanMapper"/>
     </mappers>
 </configuration>

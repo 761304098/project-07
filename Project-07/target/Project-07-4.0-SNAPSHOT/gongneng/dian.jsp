@@ -91,7 +91,7 @@
             $("#a24").click(function (){
                 $("#dianList").attr("src","${pageContext.request.contextPath}/getDianThree4")
             })
-          
+
         })
     </script>
 </head>
