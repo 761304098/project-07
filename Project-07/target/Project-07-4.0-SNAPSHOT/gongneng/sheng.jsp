@@ -67,7 +67,7 @@
             $("#a16").click(function (){
                 $("#shengList").attr("src","${pageContext.request.contextPath}/getShengTwo2")
             })
-         
+
 
         })
     </script>
