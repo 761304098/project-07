@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.JianMapper">
+      <select id="queryForAll" resultType="jian">
+           select * from jianpan order by price
+      </select>
+       <select id="queryForName" resultType="jian" parameterType="String">
+             select * from jianpan where name like concat('%',#{name},'%')  order by price
+       </select>
+    <select id="queryForPrice1" resultType="jian">
+         select * from jianpan where price &lt;=49 order by price
+    </select>
+    <select id="queryForPrice2" resultType="jian">
+         select * from jianpan where price &gt;=50 and price &lt;=99 order by price
+    </select>
+    <select id="queryForPrice3" resultType="jian">
+         select * from jianpan where price &gt;=100 and price &lt;=399 order by price
+    </select>
+    <select id="queryForPrice4" resultType="jian">
+         select * from jianpan where price &gt;=400 order by price
+    </select>
+
+    <select id="queryForOne" resultType="jian" parameterType="String">
+         select * from jianpan where one like concat('%',#{one},'%')  order by price
+    </select>
+    <select id="queryForTwo" resultType="jian" parameterType="String">
+         select * from jianpan where two like concat('%',#{two},'%')  order by price
+    </select>
+    <select id="queryForThree" resultType="jian" parameterType="String">
+         select * from jianpan where three like concat('%',#{three},'%')  order by price
+    </select>
+
+    <select id="queryForFour" resultType="jian" parameterType="String">
+         select * from jianpan where four like concat('%',#{four},'%')  order by price
+    </select>
+
+
+</mapper>
