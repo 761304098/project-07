@@ -26,5 +26,6 @@
         <mapper class="com.sun.dao.SanMapper"/>
         <mapper class="com.sun.dao.JianMapper"/>
         <mapper class="com.sun.dao.YinMapper"/>
+        <mapper class="com.sun.dao.GuangMapper"/>
     </mappers>
 </configuration>

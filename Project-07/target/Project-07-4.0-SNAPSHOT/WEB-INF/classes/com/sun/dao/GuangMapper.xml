@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.GuangMapper">
+      <select id="queryForAll" resultType="guang">
+           select * from guangqu order by price
+      </select>
+       <select id="queryForName" resultType="guang" parameterType="String">
+             select * from guangqu where name like concat('%',#{name},'%')  order by price
+       </select>
+    <select id="queryForPrice1" resultType="guang">
+         select * from guangqu where price &lt;150 order by price
+    </select>
+    <select id="queryForPrice2" resultType="guang">
+         select * from guangqu where price &gt;=150 and price &lt;300 order by price
+    </select>
+    <select id="queryForPrice3" resultType="guang">
+         select * from guangqu where price &gt;=300 and price &lt;400 order by price
+    </select>
+    <select id="queryForPrice4" resultType="guang">
+         select * from guangqu where price &gt;=400 order by price
+    </select>
+
+    <select id="queryForOne" resultType="guang" parameterType="String">
+         select * from guangqu where one like concat('%',#{one},'%')  order by price
+    </select>
+    <select id="queryForTwo" resultType="guang" parameterType="String">
+         select * from guangqu where two like concat('%',#{two},'%')  order by price
+    </select>
+    <select id="queryForThree" resultType="guang" parameterType="String">
+         select * from guangqu where three like concat('%',#{three},'%')  order by price
+    </select>
+
+    <select id="queryForFour" resultType="guang" parameterType="String">
+         select * from guangqu where four like concat('%',#{four},'%')  order by price
+    </select>
+
+
+</mapper>
