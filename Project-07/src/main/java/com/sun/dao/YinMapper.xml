@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.YinMapper">
+      <select id="queryForAll" resultType="yin">
+           select * from yinxiang order by price
+      </select>
+       <select id="queryForName" resultType="yin" parameterType="String">
+             select * from yinxiang where name like concat('%',#{name},'%')  order by price
+       </select>
+    <select id="queryForPrice1" resultType="yin">
+         select * from yinxiang where price &lt; 100 order by price
+    </select>
+    <select id="queryForPrice2" resultType="yin">
+         select * from yinxiang where price &gt;=100 and price &lt;500 order by price
+    </select>
+    <select id="queryForPrice3" resultType="yin">
+         select * from yinxiang where price &gt;=500 and price &lt;1200 order by price
+    </select>
+    <select id="queryForPrice4" resultType="yin">
+         select * from yinxiang where price &gt;=1200 order by price
+    </select>
+
+    <select id="queryForOne" resultType="yin" parameterType="String">
+         select * from yinxiang where one like concat('%',#{one},'%')  order by price
+    </select>
+    <select id="queryForTwo" resultType="yin" parameterType="String">
+         select * from yinxiang where two like concat('%',#{two},'%')  order by price
+    </select>
+    <select id="queryForThree" resultType="yin" parameterType="String">
+         select * from yinxiang where three like concat('%',#{three},'%')  order by price
+    </select>
+
+    <select id="queryForFour" resultType="yin" parameterType="String">
+         select * from yinxiang where four like concat('%',#{four},'%')  order by price
+    </select>
+
+
+</mapper>
