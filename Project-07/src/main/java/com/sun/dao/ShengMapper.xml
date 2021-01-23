@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.dao.ShengMapper">
+      <select id="queryForAll" resultType="sheng">
+           select * from shengka order by price
+      </select>
+       <select id="queryForName" resultType="sheng" parameterType="String">
+             select * from shengka where name like concat('%',#{name},'%')  order by price
+       </select>
+    <select id="queryForPrice1" resultType="sheng">
+         select * from shengka where price &lt;300 order by price
+    </select>
+    <select id="queryForPrice2" resultType="sheng">
+         select * from shengka where price &gt;=300 and price &lt;500 order by price
+    </select>
+    <select id="queryForPrice3" resultType="sheng">
+         select * from shengka where price &gt;=500 and price &lt;1000 order by price
+    </select>
+    <select id="queryForPrice4" resultType="sheng">
+         select * from shengka where price &gt;=1000 order by price
+    </select>
+
+    <select id="queryForOne" resultType="sheng" parameterType="String">
+         select * from shengka where one like concat('%',#{one},'%')  order by price
+    </select>
+    <select id="queryForTwo" resultType="sheng" parameterType="String">
+         select * from shengka where two like concat('%',#{two},'%')  order by price
+    </select>
+    <select id="queryForThree" resultType="sheng" parameterType="String">
+         select * from shengka where three like concat('%',#{three},'%')  order by price
+    </select>
+
+    <select id="queryForFour" resultType="sheng" parameterType="String">
+         select * from shengka where four like concat('%',#{four},'%')  order by price
+    </select>
+
+
+</mapper>

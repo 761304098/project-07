@@ -79,7 +79,7 @@
             $("#a20").click(function (){
                 $("#guangList").attr("src","${pageContext.request.contextPath}/getGuangThree2")
             })
-       
+
         })
     </script>
 </head>
