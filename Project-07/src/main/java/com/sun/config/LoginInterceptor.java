@@ -1,3 +1,4 @@
+/*
 package com.sun.config;
 
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -24,3 +25,4 @@ public class LoginInterceptor implements HandlerInterceptor {
         return false;
     }
 }
+*/

@@ -22,7 +22,7 @@ public class WangController {
     @RequestMapping("/getWangAll")
     public String getWangAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForAll();
         PageInfo page=new PageInfo(wangs,4);
 
@@ -34,7 +34,7 @@ public class WangController {
     @RequestMapping("/getWangName1")
     public String getWangName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("Winyao");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -46,7 +46,7 @@ public class WangController {
     @RequestMapping("/getWangName2")
     public String getWangName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("Mellanox");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -58,7 +58,7 @@ public class WangController {
     @RequestMapping("/getWangName3")
     public String getWangName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("Intel");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -70,7 +70,7 @@ public class WangController {
     @RequestMapping("/getWangName4")
     public String getWangName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("光润通");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -82,7 +82,7 @@ public class WangController {
     @RequestMapping("/getWangName5")
     public String getWangName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("TP-LINK");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -94,7 +94,7 @@ public class WangController {
     @RequestMapping("/getWangName6")
     public String getWangName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("磊科");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -106,7 +106,7 @@ public class WangController {
     @RequestMapping("/getWangName7")
     public String getWangName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("腾达");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -118,7 +118,7 @@ public class WangController {
     @RequestMapping("/getWangName8")
     public String getWangName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForName("联想");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -131,7 +131,7 @@ public class WangController {
     @RequestMapping("/getWangPrice1")
     public String getWangPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForPrice1();
         PageInfo page=new PageInfo(wangs,4);
 
@@ -143,7 +143,7 @@ public class WangController {
     @RequestMapping("/getWangPrice2")
     public String getWangPrice2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForPrice2();
         PageInfo page=new PageInfo(wangs,4);
 
@@ -155,7 +155,7 @@ public class WangController {
     @RequestMapping("/getWangPrice3")
     public String getWangPrice3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForPrice3();
         PageInfo page=new PageInfo(wangs,4);
 
@@ -167,7 +167,7 @@ public class WangController {
     @RequestMapping("/getWangPrice4")
     public String getWangPrice4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForPrice4();
         PageInfo page=new PageInfo(wangs,4);
 
@@ -180,7 +180,7 @@ public class WangController {
     @RequestMapping("/getWangOne1")
     public String getWangOne1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForOne("以太网");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -193,7 +193,7 @@ public class WangController {
     @RequestMapping("/getWangOne2")
     public String getWangOne2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForOne("快速以太网");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -207,7 +207,7 @@ public class WangController {
     @RequestMapping("/getWangOne3")
     public String getWangOne3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForOne("千兆以太网");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -219,7 +219,7 @@ public class WangController {
     @RequestMapping("/getWangOne4")
     public String getWangOne4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForOne("万兆以太网");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -233,7 +233,7 @@ public class WangController {
     @RequestMapping("/getWangTwo1")
     public String getWangTwo1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForTwo("RJ45");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -245,7 +245,7 @@ public class WangController {
     @RequestMapping("/getWangTwo2")
     public String getWangTwo2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForTwo("光纤");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -258,7 +258,7 @@ public class WangController {
     @RequestMapping("/getWangThree1")
     public String getWangThree1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForThree("PCI-E");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -270,7 +270,7 @@ public class WangController {
     @RequestMapping("/getWangThree2")
     public String getWangThree2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForThree("PCI-X");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -282,7 +282,7 @@ public class WangController {
     @RequestMapping("/getWangThree3")
     public String getWangThree3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForThree("USB");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -294,7 +294,7 @@ public class WangController {
     @RequestMapping("/getWangFour1")
     public String getWangFour1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForFour("10/100Mbps");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -306,7 +306,7 @@ public class WangController {
     @RequestMapping("/getWangFour2")
     public String getWangFour2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForFour("10/100/1000Mbps");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -319,7 +319,7 @@ public class WangController {
     @RequestMapping("/getWangFour3")
     public String getWangFour3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForFour("1000Mbps");
         PageInfo page=new PageInfo(wangs,4);
 
@@ -332,7 +332,7 @@ public class WangController {
     @RequestMapping("/getWangFour4")
     public String getWangFour4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Wang> wangs = wangService.queryForFour("10000Mbps");
         PageInfo page=new PageInfo(wangs,4);
 

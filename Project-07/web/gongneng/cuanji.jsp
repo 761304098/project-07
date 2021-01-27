@@ -88,7 +88,7 @@
 
                             <div class="col-sm-7" >
                                 <td>
-                                    <h4 class="text-center">PC逆全球市场上扬 联想继续蝉联出货第一</h4>
+                                    <h4 class="text-center"><a href="../home/one/index.html">PC逆全球市场上扬 联想继续蝉联出货第一</a></h4>
                                     <p style="color: grey">近日，调研机构IDC正式发布了一份最新的报告，报告中显示，第三季度全球PC出货量为8130万台，同比增长14.6%。联想集团继续以23.7%的市场份额排在第一位，出货量为1927万台。</p>
                                 </td>
                             </div>
@@ -101,7 +101,7 @@
 
                             <div class="col-sm-7" >
                                 <td>
-                                    <h4 class="text-center">苹果自研芯片由台积电独家代工 </h4>
+                                    <h4 class="text-center"><a href="../home/two/index.html">苹果自研芯片由台积电独家代工</a>  </h4>
                                     <p style="color: grey">10月13日，据中国台湾经济日报报道，近日有供应链消息显示，今天凌晨新款iPhone发布后，苹果可能在11月再次举行新品发布会，主角是苹果自主研发芯片Apple Silicon的 MacBook。这一芯片是由台积电独家代工，笔记本电脑成品组装厂为广达。</p>
                                 </td>
                             </div>
@@ -113,7 +113,7 @@
 
                             <div class="col-sm-7" >
                                 <td>
-                                    <h4 class="text-center">戴尔发布新一代XPS 13系列 强大性能再升 </h4>
+                                    <h4 class="text-center"><a href="../home/three/index.html">戴尔发布新一代XPS 13系列 强大性能再升</a> </h4>
                                     <p style="color: grey">戴尔发布新一代XPS 13系列，包括XPS 13二合一、XPS 13。新品均搭载英特尔最新11代处理器、提升内存，并配置雷电4接口。XPS 13、XPS 13二合一，XPS 2020笔记本电脑系列采用礼盒式包装，包装材料由可持续材料制成，包括海洋回收塑料、本地回收塑料以及可回收瓦楞纸。</p>
                                 </td>
                             </div>

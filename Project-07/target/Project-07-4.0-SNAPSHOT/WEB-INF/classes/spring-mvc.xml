@@ -28,10 +28,10 @@
                 </mvc:message-converters>
         </mvc:annotation-driven>
          <!--拦截器-->
-        <mvc:interceptors>
+  <!--      <mvc:interceptors>
                <mvc:interceptor>
                        <mvc:mapping path="/changePassword"/>
                        <bean class="com.sun.config.LoginInterceptor"/>
                </mvc:interceptor>
-        </mvc:interceptors>
+        </mvc:interceptors>-->
 </beans>

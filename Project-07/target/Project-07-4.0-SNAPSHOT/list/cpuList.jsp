@@ -86,11 +86,12 @@
            </c:forEach>
         </ul>
     </div>
-    <div class="row">
+
+  <div class="row">
        <div class="col-xs-6 text-left" >
              当前${pageInfo.pageNum}页，总${pageInfo.pages}页，共${pageInfo.total}条记录。
        </div>
-        <div class="col-xs-6 text-right">
+        <div class="col-xs-6 text-right" style="padding-top: 1%">
             <nav aria-label="Page navigation">
                 <ul class="pagination">
                     <c:if test="${pageInfo.hasPreviousPage}">

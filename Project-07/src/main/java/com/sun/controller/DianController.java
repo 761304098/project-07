@@ -24,7 +24,7 @@ public class DianController {
     @RequestMapping("/getDianAll")
     public String getDianAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForAll();
         PageInfo page=new PageInfo(dians,4);
 
@@ -36,7 +36,7 @@ public class DianController {
     @RequestMapping("/getDianName1")
     public String getDianName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("航嘉");
         PageInfo page=new PageInfo(dians,4);
 
@@ -48,7 +48,7 @@ public class DianController {
     @RequestMapping("/getDianName2")
     public String getDianName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("鑫谷");
         PageInfo page=new PageInfo(dians,4);
 
@@ -61,7 +61,7 @@ public class DianController {
     @RequestMapping("/getDianName3")
     public String getDianName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("金河田");
         PageInfo page=new PageInfo(dians,4);
 
@@ -74,7 +74,7 @@ public class DianController {
     @RequestMapping("/getDianName4")
     public String getDianName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("先马");
         PageInfo page=new PageInfo(dians,4);
 
@@ -87,7 +87,7 @@ public class DianController {
     @RequestMapping("/getDianName5")
     public String getDianName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("长城机电");
         PageInfo page=new PageInfo(dians,4);
 
@@ -100,7 +100,7 @@ public class DianController {
     @RequestMapping("/getDianName6")
     public String getDianName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("至睿");
         PageInfo page=new PageInfo(dians,4);
 
@@ -113,7 +113,7 @@ public class DianController {
     @RequestMapping("/getDianName7")
     public String getDianName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("华硕");
         PageInfo page=new PageInfo(dians,4);
 
@@ -126,7 +126,7 @@ public class DianController {
     @RequestMapping("/getDianName8")
     public String getDianName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForName("酷冷至尊");
         PageInfo page=new PageInfo(dians,4);
 
@@ -140,7 +140,7 @@ public class DianController {
     @RequestMapping("/getDianPrice1")
     public String getDianPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForPrice1();
         PageInfo page=new PageInfo(dians,4);
 
@@ -156,7 +156,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("price1",150);
         map.put("price2",200);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForPrice2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -171,7 +171,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("price1",200);
         map.put("price2",300);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForPrice2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -186,7 +186,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("price1",300);
         map.put("price2",600);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForPrice2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -201,7 +201,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("price1",600);
         map.put("price2",1000);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForPrice2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -213,7 +213,7 @@ public class DianController {
     @RequestMapping("/getDianPrice6")
     public String getDianPrice6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForPrice3();
         PageInfo page=new PageInfo(dians,4);
 
@@ -226,7 +226,7 @@ public class DianController {
     @RequestMapping("/getDianGong1")
     public String getDianGong1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForGong1();
         PageInfo page=new PageInfo(dians,4);
 
@@ -241,7 +241,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("gong1",301);
         map.put("gong2",400);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForGong2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -256,7 +256,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("gong1",401);
         map.put("gong2",500);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForGong2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -271,7 +271,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("gong1",501);
         map.put("gong2",600);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForGong2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -286,7 +286,7 @@ public class DianController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("gong1",601);
         map.put("gong2",800);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForGong2(map);
         PageInfo page=new PageInfo(dians,4);
 
@@ -299,7 +299,7 @@ public class DianController {
     @RequestMapping("/getDianGong6")
     public String getDianGong6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForGong3();
         PageInfo page=new PageInfo(dians,4);
 
@@ -311,7 +311,7 @@ public class DianController {
     @RequestMapping("/getDianThree1")
     public String getDianThree1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForThree("台式机");
         PageInfo page=new PageInfo(dians,4);
 
@@ -323,7 +323,7 @@ public class DianController {
     @RequestMapping("/getDianThree2")
     public String getDianThree2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForThree("游戏");
         PageInfo page=new PageInfo(dians,4);
 
@@ -335,7 +335,7 @@ public class DianController {
     @RequestMapping("/getDianThree3")
     public String getDianThree3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForThree("小机箱");
         PageInfo page=new PageInfo(dians,4);
 
@@ -347,7 +347,7 @@ public class DianController {
     @RequestMapping("/getDianThree4")
     public String getDianThree4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Dian> dians = dianService.queryForThree("服务器");
         PageInfo page=new PageInfo(dians,4);
 

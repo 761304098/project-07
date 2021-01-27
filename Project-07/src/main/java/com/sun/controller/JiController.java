@@ -25,7 +25,7 @@ public class JiController {
     @RequestMapping("/getJiAll")
     public String getJiAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForAll();
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -38,7 +38,7 @@ public class JiController {
     @RequestMapping("/getJiName1")
     public String getJiName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("航嘉");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -50,7 +50,7 @@ public class JiController {
     @RequestMapping("/getJiName2")
     public String getJiName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("鑫谷");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -62,7 +62,7 @@ public class JiController {
     @RequestMapping("/getJiName3")
     public String getJiName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("aigo");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -74,7 +74,7 @@ public class JiController {
     @RequestMapping("/getJiName4")
     public String getJiName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("金河田");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -86,7 +86,7 @@ public class JiController {
     @RequestMapping("/getJiName5")
     public String getJiName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("先马");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -98,7 +98,7 @@ public class JiController {
     @RequestMapping("/getJiName6")
     public String getJiName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("Tt");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -110,7 +110,7 @@ public class JiController {
     @RequestMapping("/getJiName7")
     public String getJiName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("影驰");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -122,7 +122,7 @@ public class JiController {
     @RequestMapping("/getJiName8")
     public String getJiName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForName("九州风神");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -135,7 +135,7 @@ public class JiController {
     @RequestMapping("/getJiPrice1")
     public String getJiPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForPrice1();
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -150,7 +150,7 @@ public class JiController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("price1",150);
         map.put("price2",200);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForPrice2(map);
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -165,7 +165,7 @@ public class JiController {
         Map<String,Object> map =new HashMap<String, Object>();
         map.put("price1",200);
         map.put("price2",300);
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForPrice2(map);
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -178,7 +178,7 @@ public class JiController {
     @RequestMapping("/getJiPrice4")
     public String getJiPrice4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForPrice3();
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -191,7 +191,7 @@ public class JiController {
     @RequestMapping("/getJiLei1")
     public String getJiLei1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForLei("台式机");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -203,7 +203,7 @@ public class JiController {
     @RequestMapping("/getJiLei2")
     public String getJiLei2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForLei("游戏机箱");
         PageInfo page=new PageInfo(jiXiangs,4);
 
@@ -216,7 +216,7 @@ public class JiController {
     @RequestMapping("/getJiLei3")
     public String getJiLei3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<JiXiang> jiXiangs = jiService.queryForLei("服务器机箱");
         PageInfo page=new PageInfo(jiXiangs,4);
 

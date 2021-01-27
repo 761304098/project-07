@@ -23,7 +23,7 @@ public class YinController {
     @RequestMapping("/getYinAll")
     public String getYinAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForAll();
         PageInfo page=new PageInfo(yins,4);
 
@@ -35,7 +35,7 @@ public class YinController {
     @RequestMapping("/getYinName1")
     public String getYinName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("惠威");
         PageInfo page=new PageInfo(yins,4);
 
@@ -47,7 +47,7 @@ public class YinController {
     @RequestMapping("/getYinName2")
     public String getYinName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("BOSE");
         PageInfo page=new PageInfo(yins,4);
 
@@ -59,7 +59,7 @@ public class YinController {
     @RequestMapping("/getYinName3")
     public String getYinName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("SONOS");
         PageInfo page=new PageInfo(yins,4);
 
@@ -71,7 +71,7 @@ public class YinController {
     @RequestMapping("/getYinName4")
     public String getYinName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("漫步者");
         PageInfo page=new PageInfo(yins,4);
 
@@ -83,7 +83,7 @@ public class YinController {
     @RequestMapping("/getYinName5")
     public String getYinName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("声擎");
         PageInfo page=new PageInfo(yins,4);
 
@@ -95,7 +95,7 @@ public class YinController {
     @RequestMapping("/getYinName6")
     public String getYinName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("JBL");
         PageInfo page=new PageInfo(yins,4);
 
@@ -107,7 +107,7 @@ public class YinController {
     @RequestMapping("/getYinName7")
     public String getYinName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("麦博");
         PageInfo page=new PageInfo(yins,4);
 
@@ -119,7 +119,7 @@ public class YinController {
     @RequestMapping("/getYinName8")
     public String getYinName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForName("爱国者");
         PageInfo page=new PageInfo(yins,4);
 
@@ -131,7 +131,7 @@ public class YinController {
     @RequestMapping("/getYinPrice1")
     public String getYinPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForPrice1();
         PageInfo page=new PageInfo(yins,4);
 
@@ -143,7 +143,7 @@ public class YinController {
     @RequestMapping("/getYinPrice2")
     public String getYinPrice2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForPrice2();
         PageInfo page=new PageInfo(yins,4);
 
@@ -155,7 +155,7 @@ public class YinController {
     @RequestMapping("/getYinPrice3")
     public String getYinPrice3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForPrice3();
         PageInfo page=new PageInfo(yins,4);
 
@@ -167,7 +167,7 @@ public class YinController {
     @RequestMapping("/getYinPrice4")
     public String getYinPrice4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForPrice4();
         PageInfo page=new PageInfo(yins,4);
 
@@ -180,7 +180,7 @@ public class YinController {
     @RequestMapping("/getYinOne1")
     public String getYinOne1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("电脑");
         PageInfo page=new PageInfo(yins,4);
 
@@ -193,7 +193,7 @@ public class YinController {
     @RequestMapping("/getYinOne2")
     public String getYinOne2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("HiFi");
         PageInfo page=new PageInfo(yins,4);
 
@@ -205,7 +205,7 @@ public class YinController {
     @RequestMapping("/getYinOne3")
     public String getYinOne3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("笔记本");
         PageInfo page=new PageInfo(yins,4);
 
@@ -218,7 +218,7 @@ public class YinController {
     @RequestMapping("/getYinOne4")
     public String getYinOne4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("苹果");
         PageInfo page=new PageInfo(yins,4);
 
@@ -231,7 +231,7 @@ public class YinController {
     @RequestMapping("/getYinOne5")
     public String getYinOne5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("电视");
         PageInfo page=new PageInfo(yins,4);
 
@@ -244,7 +244,7 @@ public class YinController {
     @RequestMapping("/getYinOne6")
     public String getYinOne6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("木质");
         PageInfo page=new PageInfo(yins,4);
 
@@ -258,7 +258,7 @@ public class YinController {
     @RequestMapping("/getYinOne7")
     public String getYinOne7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("金属");
         PageInfo page=new PageInfo(yins,4);
 
@@ -272,7 +272,7 @@ public class YinController {
     @RequestMapping("/getYinOne8")
     public String getYinOne8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Yin> yins = yinService.queryForOne("塑料");
         PageInfo page=new PageInfo(yins,4);
 

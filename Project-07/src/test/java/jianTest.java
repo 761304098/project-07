@@ -1,3 +1,4 @@
+/*
 import com.sun.bean.Cpu;
 import com.sun.bean.Jian;
 import com.sun.bean.zhuban;
@@ -21,3 +22,4 @@ public class jianTest {
         }
     }
 }
+*/

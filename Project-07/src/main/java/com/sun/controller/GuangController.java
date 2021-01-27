@@ -22,7 +22,7 @@ public class GuangController {
     @RequestMapping("/getGuangAll")
     public String getGuangAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForAll();
         PageInfo page=new PageInfo(guangs,4);
 
@@ -35,7 +35,7 @@ public class GuangController {
     @RequestMapping("/getGuangName1")
     public String getGuangName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("华硕");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -47,7 +47,7 @@ public class GuangController {
     @RequestMapping("/getGuangName2")
     public String getGuangName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("先锋");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -59,7 +59,7 @@ public class GuangController {
     @RequestMapping("/getGuangName3")
     public String getGuangName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("LG");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -71,7 +71,7 @@ public class GuangController {
     @RequestMapping("/getGuangName4")
     public String getGuangName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("三星");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -83,7 +83,7 @@ public class GuangController {
     @RequestMapping("/getGuangName5")
     public String getGuangName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("索尼");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -95,7 +95,7 @@ public class GuangController {
     @RequestMapping("/getGuangName6")
     public String getGuangName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("建兴");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -107,7 +107,7 @@ public class GuangController {
     @RequestMapping("/getGuangName7")
     public String getGuangName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("松下");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -119,7 +119,7 @@ public class GuangController {
     @RequestMapping("/getGuangName8")
     public String getGuangName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForName("联想");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -131,7 +131,7 @@ public class GuangController {
     @RequestMapping("/getGuangPrice1")
     public String getGuangPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForPrice1();
         PageInfo page=new PageInfo(guangs,4);
 
@@ -144,7 +144,7 @@ public class GuangController {
     @RequestMapping("/getGuangPrice2")
     public String getGuangPrice2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForPrice2();
         PageInfo page=new PageInfo(guangs,4);
 
@@ -156,7 +156,7 @@ public class GuangController {
     @RequestMapping("/getGuangPrice3")
     public String getGuangPrice3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForPrice3();
         PageInfo page=new PageInfo(guangs,4);
 
@@ -168,7 +168,7 @@ public class GuangController {
     @RequestMapping("/getGuangPrice4")
     public String getGuangPrice4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForPrice4();
         PageInfo page=new PageInfo(guangs,4);
 
@@ -182,7 +182,7 @@ public class GuangController {
     @RequestMapping("/getGuangOne1")
     public String getGuangOne1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForOne("DVD刻录机");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -194,7 +194,7 @@ public class GuangController {
     @RequestMapping("/getGuangOne2")
     public String getGuangOne2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForOne("蓝光刻录机");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -207,7 +207,7 @@ public class GuangController {
     @RequestMapping("/getGuangOne3")
     public String getGuangOne3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForOne("DVD光驱");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -220,7 +220,7 @@ public class GuangController {
     @RequestMapping("/getGuangOne4")
     public String getGuangOne4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForOne("蓝光COMBO");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -233,7 +233,7 @@ public class GuangController {
     @RequestMapping("/getGuangFour1")
     public String getGuangFour1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForFour("USB");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -245,7 +245,7 @@ public class GuangController {
     @RequestMapping("/getGuangFour2")
     public String getGuangFour2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForFour("SATA");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -258,7 +258,7 @@ public class GuangController {
     @RequestMapping("/getGuangThree1")
     public String getGuangThree1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForThree("外置");
         PageInfo page=new PageInfo(guangs,4);
 
@@ -270,7 +270,7 @@ public class GuangController {
     @RequestMapping("/getGuangThree2")
     public String getGuangThree2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<Guang> guangs = guangServicel.queryForThree("内置");
         PageInfo page=new PageInfo(guangs,4);
 

@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.sun.bean.Jian;
 import com.sun.bean.Sheng;
 import com.sun.service.ShengServiceImpl;
+import lombok.experimental.Helper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +24,7 @@ public class ShengController {
     @RequestMapping("/getShengAll")
     public String getShengAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForAll();
         PageInfo page=new PageInfo(shengs,4);
 
@@ -37,7 +38,7 @@ public class ShengController {
     @RequestMapping("/getShengName1")
     public String getShengName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("创新");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -49,7 +50,7 @@ public class ShengController {
     @RequestMapping("/getShengName2")
     public String getShengName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("森然");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -61,7 +62,7 @@ public class ShengController {
     @RequestMapping("/getShengName3")
     public String getShengName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("华硕");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -74,7 +75,7 @@ public class ShengController {
     @RequestMapping("/getShengName4")
     public String getShengName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("客所思");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -87,7 +88,7 @@ public class ShengController {
     @RequestMapping("/getShengName5")
     public String getShengName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("德国坦克");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -100,7 +101,7 @@ public class ShengController {
     @RequestMapping("/getShengName6")
     public String getShengName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("AZ");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -113,7 +114,7 @@ public class ShengController {
     @RequestMapping("/getShengName7")
     public String getShengName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("乐之邦");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -126,7 +127,7 @@ public class ShengController {
     @RequestMapping("/getShengName8")
     public String getShengName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForName("声擎");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -139,7 +140,7 @@ public class ShengController {
     @RequestMapping("/getShengPrice1")
     public String getShengPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForPrice1();
         PageInfo page=new PageInfo(shengs,4);
 
@@ -151,7 +152,7 @@ public class ShengController {
     @RequestMapping("/getShengPrice2")
     public String getShengPrice2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForPrice2();
         PageInfo page=new PageInfo(shengs,4);
 
@@ -164,7 +165,7 @@ public class ShengController {
     @RequestMapping("/getShengPrice3")
     public String getShengPrice3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForPrice3();
         PageInfo page=new PageInfo(shengs,4);
 
@@ -177,7 +178,7 @@ public class ShengController {
     @RequestMapping("/getShengPrice4")
     public String getShengPrice4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForPrice4();
         PageInfo page=new PageInfo(shengs,4);
 
@@ -189,7 +190,7 @@ public class ShengController {
     @RequestMapping("/getShengOne1")
     public String getShengOne1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForOne("家用");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -201,7 +202,7 @@ public class ShengController {
     @RequestMapping("/getShengOne2")
     public String getShengOne2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForOne("专业");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -213,7 +214,7 @@ public class ShengController {
       @RequestMapping("/getShengTwo1")
     public String getShengTwo1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForTwo("PCI");
         PageInfo page=new PageInfo(shengs,4);
 
@@ -225,7 +226,7 @@ public class ShengController {
     @RequestMapping("/getShengTwo2")
     public String getShengTwo2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+      PageHelper.startPage(pn,3);
         List<Sheng> shengs = shengService.queryForTwo("USB");
         PageInfo page=new PageInfo(shengs,4);
 

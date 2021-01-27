@@ -21,7 +21,7 @@ public class SanController {
     @RequestMapping("/getSanAll")
     public String getSanAll (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForAll();
         PageInfo page=new PageInfo(sans,4);
 
@@ -34,7 +34,7 @@ public class SanController {
     @RequestMapping("/getSanName1")
     public String getSanName1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("超频三");
         PageInfo page=new PageInfo(sans,4);
 
@@ -46,7 +46,7 @@ public class SanController {
     @RequestMapping("/getSanName2")
     public String getSanName2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("九州风神");
         PageInfo page=new PageInfo(sans,4);
 
@@ -58,7 +58,7 @@ public class SanController {
     @RequestMapping("/getSanName3")
     public String getSanName3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("Tt");
         PageInfo page=new PageInfo(sans,4);
 
@@ -70,7 +70,7 @@ public class SanController {
     @RequestMapping("/getSanName4")
     public String getSanName4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("NZXT");
         PageInfo page=new PageInfo(sans,4);
 
@@ -82,7 +82,7 @@ public class SanController {
     @RequestMapping("/getSanName5")
     public String getSanName5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("安钛克");
         PageInfo page=new PageInfo(sans,4);
 
@@ -94,7 +94,7 @@ public class SanController {
     @RequestMapping("/getSanName6")
     public String getSanName6 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("酷冷至尊");
         PageInfo page=new PageInfo(sans,4);
 
@@ -106,7 +106,7 @@ public class SanController {
     @RequestMapping("/getSanName7")
     public String getSanName7 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("雷神");
         PageInfo page=new PageInfo(sans,4);
 
@@ -118,7 +118,7 @@ public class SanController {
     @RequestMapping("/getSanName8")
     public String getSanName8 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForName("华硕");
         PageInfo page=new PageInfo(sans,4);
 
@@ -131,7 +131,7 @@ public class SanController {
     @RequestMapping("/getSanPrice1")
     public String getSanPrice1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForPrice1();
         PageInfo page=new PageInfo(sans,4);
 
@@ -143,7 +143,7 @@ public class SanController {
     @RequestMapping("/getSanPrice2")
     public String getSanPrice2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForPrice2();
         PageInfo page=new PageInfo(sans,4);
 
@@ -156,7 +156,7 @@ public class SanController {
     @RequestMapping("/getSanPrice3")
     public String getSanPrice3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForPrice3();
         PageInfo page=new PageInfo(sans,4);
 
@@ -169,7 +169,7 @@ public class SanController {
     @RequestMapping("/getSanPrice4")
     public String getSanPrice4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForPrice1();
         PageInfo page=new PageInfo(sans,4);
 
@@ -182,7 +182,7 @@ public class SanController {
     @RequestMapping("/getSanOne1")
     public String getSanOne1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForOne("CPU");
         PageInfo page=new PageInfo(sans,4);
 
@@ -195,7 +195,7 @@ public class SanController {
     @RequestMapping("/getSanOne2")
     public String getSanOne2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForOne("笔记本");
         PageInfo page=new PageInfo(sans,4);
 
@@ -207,7 +207,7 @@ public class SanController {
     @RequestMapping("/getSanOne3")
     public String getSanOne3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForOne("显卡");
         PageInfo page=new PageInfo(sans,4);
 
@@ -219,7 +219,7 @@ public class SanController {
     @RequestMapping("/getSanOne4")
     public String getSanOne4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForOne("水冷");
         PageInfo page=new PageInfo(sans,4);
 
@@ -232,7 +232,7 @@ public class SanController {
     @RequestMapping("/getSanOne5")
     public String getSanOne5 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForOne("风扇");
         PageInfo page=new PageInfo(sans,4);
 
@@ -245,7 +245,7 @@ public class SanController {
     @RequestMapping("/getSanTwo1")
     public String getSanTwo1 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForTwo("水冷");
         PageInfo page=new PageInfo(sans,4);
 
@@ -257,7 +257,7 @@ public class SanController {
     @RequestMapping("/getSanTwo2")
     public String getSanTwo2 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForTwo("风冷");
         PageInfo page=new PageInfo(sans,4);
 
@@ -270,7 +270,7 @@ public class SanController {
     @RequestMapping("/getSanTwo3")
     public String getSanTwo3 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForTwo("热管");
         PageInfo page=new PageInfo(sans,4);
 
@@ -283,7 +283,7 @@ public class SanController {
     @RequestMapping("/getSanTwo4")
     public String getSanTwo4 (@RequestParam(value="pn",defaultValue = "1") Integer pn , HttpServletRequest request){
 
-        PageHelper.startPage(pn,4);
+        PageHelper.startPage(pn,3);
         List<San> sans = sanService.queryForTwo("散热片");
         PageInfo page=new PageInfo(sans,4);
 
